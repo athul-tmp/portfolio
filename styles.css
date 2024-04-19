@@ -37,6 +37,16 @@ header {
     color: #e5e7eb;
     text-decoration: none;
     margin: 10px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.header-links:hover,
+.header-links:focus {
+    background-color: #4A6572;
+    color: #F9FAF8;
+    text-decoration: none;
+    border-radius: 4px;
 }
 
 /* ---ABOUT ME--- */
@@ -60,7 +70,7 @@ header {
 .about-me img {
     height: auto;
     width: 40%;
-    max-width: 350px;
+    max-width: 250px;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -78,6 +88,51 @@ header {
 .about-me p {
     line-height: 1.6;
     font-size: 18px;
+}
+
+/* ---SKILLS--- */
+.skills-section {
+    padding: 40px 200px;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+.skills-section h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.skill-category h3 {
+    color: #444;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-list li {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin: 5px;
+    font-size: 18px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.skills-list li:hover {
+    background-color: #e8e8e8;
+    transform: translateY(-2px);
 }
 
 /* ---CONTACT SECTION--- */
@@ -101,7 +156,7 @@ header {
 
 .social-links a {
     display: inline-block;
-    background-color: #3882f6;
+    background-color: #4A6572;
     color: #ffffff;
     padding: 10px 20px;
     text-decoration: none;
@@ -112,8 +167,8 @@ header {
 }
 
 .social-links a:hover {
-    background-color: #1a73e8;
-    text-decoration: none;
+    background-color: #5C85AD;
+    color: #F9FAF8;
 }
 
 /* ---FOOTER--- */
