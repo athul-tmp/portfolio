@@ -32,6 +32,12 @@ header {
 
 }
 
+.main-page {
+    font-size: 25px;
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
 .header-links {
     font-size: 18px;
     color: #e5e7eb;
@@ -170,6 +176,68 @@ header {
     background-color: #5C85AD;
     color: #F9FAF8;
 }
+
+/* ---PROJECTS--- */
+.portfolio-section {
+    background-color: #f4f4f9;
+    padding: 40px 200px;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 20px;
+}
+
+.project-item h3 {
+    font-size: 22px;
+    color: #1f2937;
+    margin-bottom: 15px;
+}
+
+.project-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.project-item img {
+    max-width: 300px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-item p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.project-item a.btn {
+    font-size: 18px;
+    background-color: #4A6572;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.project-item a.btn:hover {
+    background-color: #5C85AD;
+}
+
+.project-item img {
+    width: 100%;
+}
+
+
 
 /* ---FOOTER--- */
 footer {
