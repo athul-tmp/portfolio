@@ -7,6 +7,11 @@ html {
     scroll-behavior: smooth;
 }
 
+hr {
+    border-top: 3px solid black;
+    border-radius: 10px;
+}
+
 /* ---MAIN--- */
 .main-section {
     padding: 20px 200px;
@@ -183,6 +188,20 @@ header {
     padding: 40px 200px;
 }
 
+.portfolio-section a.btn {
+    font-size: 18px;
+    background-color: #4A6572;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.portfolio-section a.btn:hover {
+    background-color: #5C85AD;
+}
+
 .project-item {
     display: flex;
     flex-direction: column;
@@ -205,7 +224,7 @@ header {
 }
 
 .project-item img {
-    max-width: 300px;
+    max-width: 400px;
     border-radius: 8px;
     margin-right: 20px;
 }
