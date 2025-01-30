@@ -11,4 +11,4 @@ This is a personal portfolio built with **React** and **CSS**. It showcases my s
 
 ## Link
 
-Live website:
+[Visit my portfolio](https://athul-thampan.netlify.app/)
