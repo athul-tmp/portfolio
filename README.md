@@ -6,7 +6,6 @@ This is a personal portfolio built with **React** and **CSS**. It showcases my s
 
 - React
 - CSS
-- Font Awesome
 - Netlify (for deployment)
 
 ## Link
