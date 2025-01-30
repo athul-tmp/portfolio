@@ -9,23 +9,20 @@ import fbmetricsImage from "../images/FB_metrics.png"
 function Projects() {
   const projectsRef = useRef(null);
 
-  // Scroll by width of 3 items (300px per item + 20px gap)
   const scrollProjects = (direction) => {
     const container = projectsRef.current;
-    const scrollAmount = 3 * (300 + 20); // 3 items, each 300px + 20px gap
-
+    const projectWidth = 300 + 20; // Single project's width + gap
+    const isMobile = window.innerWidth <= 768; // Detect mobile screen
+  
+    const scrollAmount = isMobile ? projectWidth : 3 * projectWidth; // Scroll 1 project on mobile, 3 on larger screens
+  
     if (direction === 'left') {
-      container.scrollBy({
-        left: -scrollAmount,
-        behavior: 'smooth',
-      });
+      container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     } else {
-      container.scrollBy({
-        left: scrollAmount,
-        behavior: 'smooth',
-      });
+      container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
   };
+  
 
   return (
     <section className="projects-section" id="projects">

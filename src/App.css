@@ -349,3 +349,39 @@ footer {
   text-align: center;
   padding: 30px;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .navbar {
+    flex-direction: row;
+    gap: 5px;
+  }
+  .about-me {
+    flex-direction: column;
+    padding: 60px 20px;
+    padding-top: 125px;
+  }
+  .about-me img {
+    padding-top: 10px;
+  }
+  .projects-section {
+    padding-top: 125px;
+  }
+  .about-projects {
+    padding-left: 20px;
+  }
+  .projects-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .project-card {
+    flex: 0 0 100%; /* Each project takes full width */
+    scroll-snap-align: center;
+  }
+}
