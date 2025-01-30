@@ -1,4 +1,14 @@
-# Portfolio
+# Portfolio Website
 
-This is the code repository for my personal portfolio website.  
-It is made using basic HTML and CSS.  
+This is a personal portfolio built with **React** and **CSS**. It showcases my skills, projects, and contact info.
+
+## Technologies Used
+
+- React
+- CSS
+- Font Awesome
+- Netlify (for deployment)
+
+## Link
+
+Live website:
