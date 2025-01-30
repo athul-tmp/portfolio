@@ -42,7 +42,7 @@ function Projects() {
           <div className="project-card">
             <h3>Music Subscription App</h3>
             <div className="project-content">
-              <img src={musicappImage} alt="Image of Music App's the main page after login" />
+              <img src={musicappImage} alt="Music App's main page after login" />
               <div className="project-info">
                 <p>A web app built with HTML, CSS, JavaScript, and PHP, hosted on AWS EC2. It uses DynamoDB for user authentication and AWS S3 for image storage.</p>
                 <p><b>Tech used: HTML, CSS, Javascript, PHP, AWS (S3, DynamoDB, EC2)</b></p>
@@ -57,7 +57,7 @@ function Projects() {
           <div className="project-card">
             <h3>Vacuum Cleaner Game</h3>
             <div className="project-content">
-              <img src={vacuumcleanerImage} alt="Image of the vacuum cleaner game board" />
+              <img src={vacuumcleanerImage} alt="Vacuum cleaner game board" />
               <div className="project-info">
                 <p>Created a vacuum cleaner game in C++ using OOP principles with a command-line interface. Players navigate a 10x10 grid with text-based commands.</p>
                 <p><b>Tech used: C++</b></p>
@@ -72,7 +72,7 @@ function Projects() {
           <div className="project-card">
             <h3>Minecraft Village Generator</h3>
             <div className="project-content">
-              <img src={mcvillageImage} alt="Image of the generated minecraft village" />
+              <img src={mcvillageImage} alt="Generated minecraft village" />
               <div className="project-info">
                 <p>A procedural Minecraft village generator in Python using MCPI. It dynamically generates villages with varying room sizes and pathways, adding trees for realism.</p>
                 <p><b>Tech used: Python</b></p>
@@ -88,7 +88,7 @@ function Projects() {
           <div className="project-card">
             <h3>Closing The Gap</h3>
             <div className="project-content">
-              <img src={closinggapImage} alt="Image of closing the gap web app" />
+              <img src={closinggapImage} alt="Closing the gap web app" />
               <div className="project-info">
                 <p>Developed a web app to highlight socio-economic disparities between Indigenous and non-Indigenous Australians, using Java, Javalin, SQLite, and tabular data visualisations.</p>
                 <p><b>Tech used: Java, HTML, CSS, SQL</b></p>
@@ -103,7 +103,7 @@ function Projects() {
           <div className="project-card">
             <h3>Rock-Paper-Scissors</h3>
             <div className="project-content">
-              <img src={rpcImage} alt="Image of Rock Paper Scissors app" />
+              <img src={rpcImage} alt="Rock Paper Scissors app" />
               <div className="project-info">
                 <p>Built an interactive rock-paper-scissors game with HTML, CSS, and JavaScript, where users play against a computer opponent.</p>
                 <p><b>Tech used: JavaScript, HTML, CSS</b></p>
@@ -119,7 +119,7 @@ function Projects() {
           <div className="project-card">
             <h3>Facebook Metrics Analysis</h3>
             <div className="project-content">
-              <img src={fbmetricsImage} alt="Image of the FB metrics report" />
+              <img src={fbmetricsImage} alt="The FB metrics report" />
               <div className="project-info">
                 <p>Analysed a 2014 Facebook dataset of posts from a cosmetics brand using Python, Pandas, and Matplotlib for data cleaning and visualisation.</p>
                 <p><b>Tech used: Python, NumPy, Matplotlib, Pandas, Jupyter Notebook</b></p>
