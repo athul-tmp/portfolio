@@ -29,7 +29,7 @@ function Projects() {
       <div className="about-projects">
         <h2>Projects</h2>
         <p>The code repository for my portfolio website can be accessed <a href="https://github.com/athul-tmp/portfolio" target="_blank" rel="noreferrer">here</a>.</p>
-        <p>The following are the projects that I've been involved in over the years:</p>
+        <p>The following are some of the projects that I've been involved in over the years:</p>
       </div>
 
       <div className="projects-container">
