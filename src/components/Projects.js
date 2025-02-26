@@ -5,6 +5,7 @@ import mcvillageImage from "../images/Minecraft_Village.png";
 import closinggapImage from "../images/Closing_The_Gap.png";
 import rpcImage from "../images/Rock_Paper_Scissors.png"
 import fbmetricsImage from "../images/FB_metrics.png"
+import vetcareImage from "../images/VetCare.png"
 
 function Projects() {
   const projectsRef = useRef(null);
@@ -35,7 +36,24 @@ function Projects() {
       <div className="projects-container">
         <button className="scroll-btn left-btn" onClick={() => scrollProjects('left')}>&#8249;</button>
         <div className="projects-list" ref={projectsRef}>
+
           {/* Project 1 */}
+          <div className="project-card">
+            <h3>VetCare - Online Vet Clinic Management System</h3>
+            <div className="project-content">
+              <img src={vetcareImage} alt="VetCare main page" />
+              <div className="project-info">
+                <p>A full-stack web app for managing veterinary clinic operations, including appointment scheduling/rescheduling, medical record management, and prescription tracking, integrated with authentication. Built with Spring Boot and MySQL, containerized using Docker.</p>
+                <p><b>Tech used: Java, Spring Boot, MySQL, Docker</b></p>
+                <div className="btn-container">
+                  <a className="btn" href="https://drive.google.com/file/d/1F08xx3LhwmULGUv1ZK2bf_tGriwy8y5H/view?usp=sharing" target="_blank" rel="noreferrer">Video Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          {/* Project 2 */}
           <div className="project-card">
             <h3>Music Subscription App</h3>
             <div className="project-content">
@@ -50,7 +68,7 @@ function Projects() {
             </div>
           </div>
 
-          {/* Project 2 */}
+          {/* Project 3 */}
           <div className="project-card">
             <h3>Vacuum Cleaner Game</h3>
             <div className="project-content">
@@ -65,7 +83,7 @@ function Projects() {
             </div>
           </div>
 
-          {/* Project 3 */}
+          {/* Project 4 */}
           <div className="project-card">
             <h3>Minecraft Village Generator</h3>
             <div className="project-content">
@@ -81,7 +99,7 @@ function Projects() {
             </div>
           </div>
 
-          {/* Project 4 */}
+          {/* Project 5 */}
           <div className="project-card">
             <h3>Closing The Gap</h3>
             <div className="project-content">
@@ -96,7 +114,7 @@ function Projects() {
             </div>
           </div>
 
-          {/* Project 5 */}
+          {/* Project 6 */}
           <div className="project-card">
             <h3>Rock-Paper-Scissors</h3>
             <div className="project-content">
@@ -112,7 +130,7 @@ function Projects() {
             </div>
           </div>
 
-          {/* Project 6 */}
+          {/* Project 7 */}
           <div className="project-card">
             <h3>Facebook Metrics Analysis</h3>
             <div className="project-content">
