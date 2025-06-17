@@ -61,6 +61,7 @@ header p {
   padding: 10px 15px;
   font-size: 1rem;
   transition: color 0.3s;
+  font-weight: bold;
 }
 
 .navbar a:hover {
@@ -151,8 +152,8 @@ header p {
 }
 
 .skill-icon {
-  width: 60%;
-  height: 60%;
+  width: 70%;
+  height: 70%;
   object-fit: contain;
   transition: opacity 0.3s;
 }
