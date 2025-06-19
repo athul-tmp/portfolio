@@ -7,11 +7,11 @@ import cssImage from '../images/css.png';
 import htmlImage from '../images/html.png';
 import jsImage from '../images/js.png';
 import tsImage from '../images/ts.png';
-import phpImage from '../images/php.png';
+import phpImage from '../images/php.svg';
 // Frameworks & Libraries
 import reactImage from '../images/react.png';
 import graphqlImage from '../images/graphql.png';
-import tailwindImage from '../images/tailwind.png';
+import tailwindImage from '../images/tailwind.svg';
 import chakraImage from '../images/chakra.png';
 import springbootImage from '../images/springboot.svg';
 import nodejsImage from '../images/nodejs.svg';

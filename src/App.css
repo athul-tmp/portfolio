@@ -110,8 +110,8 @@ section {
   flex-shrink: 0;
   max-width: 280px;
   border-radius: 15px;
-  box-shadow: 0 0 15px #ff3b3b;
-  border: 2px solid #ff3b3b;
+  box-shadow: 0 0 15px #a83232; 
+  border: 2px solid #a83232;  
   object-fit: cover;
   display: block;
 }
