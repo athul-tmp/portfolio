@@ -6,11 +6,21 @@ import closinggapImage from "../images/Closing_The_Gap.png";
 import rpcImage from "../images/Rock_Paper_Scissors.png";
 import fbmetricsImage from "../images/FB_metrics.png";
 import vetcareImage from "../images/VetCare.png";
+import airbnbImage from "../images/airbnb.png";
 import { FaGithub } from 'react-icons/fa';
 import { FaPlayCircle } from 'react-icons/fa';
 import { FaFileAlt } from 'react-icons/fa';
 
 const projectsData = [
+  {
+    title: "Airbnb Booking Website",
+    image: airbnbImage,
+    description:
+      "A full-stack web app simulating an Airbnb booking system using MongoDB, React, TypeScript, Node.js, Express, and Chakra UI. Users can browse listings from MongoDB's sample_airbnb database and create new bookings for those listings, showcasing core CRUD functionality with a focus on booking creation and listing retrieval.",
+    tech: ["MongoDB", "React", "TypeScript", "Node.js", "Express", "Chakra UI"],
+    repo: "https://github.com/athul-tmp/airbnb-booking-app",
+    demo: "https://drive.google.com/file/d/1FDB2GqPM9NOIhKNOLXevuM2lqU1h35yw/view?usp=sharing",
+  },
   {
     title: "VetCare - Online Vet Clinic Management System",
     image: vetcareImage,
