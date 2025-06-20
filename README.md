@@ -1,13 +1,13 @@
-# Portfolio Website
+# Personal Portfolio Website
 
-This is a personal portfolio built with **React** and **CSS**. It showcases my skills, projects, and contact info.
+This is my personal portfolio website built with **React**. It highlights my background, technical skills, and featured projects, and includes ways to get in touch.
 
-## Technologies Used
+## Tech Stack
 
-- React
-- CSS
-- Netlify (for deployment)
+- **React (JavaScript)**
+- **Custom CSS**
+- **Netlify** – for continuous deployment
 
-## Link
+## Live Site
 
-[Visit my portfolio](https://athul-thampan.netlify.app/)
+[athul-thampan.netlify.app](https://athul-thampan.netlify.app/)

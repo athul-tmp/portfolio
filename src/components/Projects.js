@@ -7,19 +7,20 @@ import rpcImage from "../images/Rock_Paper_Scissors.png";
 import fbmetricsImage from "../images/FB_metrics.png";
 import vetcareImage from "../images/VetCare.png";
 import airbnbImage from "../images/airbnb.png";
+import teachteamImage from "../images/teachteam.png";
 import { FaGithub } from 'react-icons/fa';
 import { FaPlayCircle } from 'react-icons/fa';
 import { FaFileAlt } from 'react-icons/fa';
 
 const projectsData = [
   {
-    title: "Airbnb Booking Website",
-    image: airbnbImage,
+    title: "TeachTeam - Teaching Team Management App",
+    image: teachteamImage,
     description:
-      "A full-stack web app simulating an Airbnb booking system using MongoDB, React, TypeScript, Node.js, Express, and Chakra UI. Users can browse listings from MongoDB's sample_airbnb database and create new bookings for those listings, showcasing core CRUD functionality with a focus on booking creation and listing retrieval.",
-    tech: ["MongoDB", "React", "TypeScript", "Node.js", "Express", "Chakra UI"],
-    repo: "https://github.com/athul-tmp/airbnb-booking-app",
-    demo: "https://drive.google.com/file/d/1FDB2GqPM9NOIhKNOLXevuM2lqU1h35yw/view?usp=sharing",
+      "A full-stack platform for managing university teaching teams. Candidates can apply to available courses, and lecturers can review, select, rank, and comment on them through secure, role-based dashboards. Includes an admin panel to assign lecturers to courses, block/unblock candidate logins, manage course data (create/edit/update), and view performance reports. Built with React (TypeScript), Chakra UI, Node.js, Express, and TypeORM, using REST and GraphQL APIs, Recharts for analytics, and MySQL.",
+    tech: ["React (TypeScript)", "Node.js", "Express", "TypeORM", "GraphQL", "MySQL", "Chakra UI", "Recharts"],
+    demo: "https://drive.google.com/file/d/15oHFyux0pwvxstbkY8mE9hByEYL7Z7RM/view?usp=sharing",
+    // repo: "https://github.com/athul-tmp/TeachTeam",
   },
   {
     title: "VetCare - Online Vet Clinic Management System",
@@ -28,6 +29,15 @@ const projectsData = [
       "A full-stack web app for managing veterinary clinic operations, including appointment scheduling/rescheduling, medical record management, and prescription tracking, integrated with authentication. Built with Spring Boot and MySQL, containerized using Docker.",
     tech: ["Java", "Spring Boot", "MySQL", "Docker"],
     demo: "https://drive.google.com/file/d/1F08xx3LhwmULGUv1ZK2bf_tGriwy8y5H/view?usp=sharing",
+  },
+  {
+    title: "Airbnb Booking Website",
+    image: airbnbImage,
+    description:
+      "A full-stack web app simulating an Airbnb booking system using MongoDB, React, TypeScript, Node.js, Express, and Chakra UI. Users can browse listings from MongoDB's sample_airbnb database and create new bookings for those listings, showcasing core CRUD functionality with a focus on booking creation and listing retrieval.",
+    tech: ["MongoDB", "React", "TypeScript", "Node.js", "Express", "Chakra UI"],
+    repo: "https://github.com/athul-tmp/airbnb-booking-app",
+    demo: "https://drive.google.com/file/d/1FDB2GqPM9NOIhKNOLXevuM2lqU1h35yw/view?usp=sharing",
   },
   {
     title: "Music Subscription App",
