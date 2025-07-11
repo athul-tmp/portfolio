@@ -20,7 +20,7 @@ const projectsData = [
       "A full-stack platform for managing university teaching teams. Candidates can apply to available courses, and lecturers can review, select, rank, and comment on them through secure, role-based dashboards. Includes an admin panel to assign lecturers to courses, block/unblock candidate logins, manage course data (create/edit/update), and view performance reports. Built with React (TypeScript), Chakra UI, Node.js, Express, and TypeORM, using REST and GraphQL APIs, Recharts for analytics, and MySQL.",
     tech: ["React (TypeScript)", "Node.js", "Express", "TypeORM", "GraphQL", "MySQL", "Chakra UI", "Recharts"],
     demo: "https://drive.google.com/file/d/15oHFyux0pwvxstbkY8mE9hByEYL7Z7RM/view?usp=sharing",
-    // repo: "https://github.com/athul-tmp/TeachTeam",
+    repo: "https://github.com/athul-tmp/TeachTeam",
   },
   {
     title: "VetCare - Online Vet Clinic Management System",
