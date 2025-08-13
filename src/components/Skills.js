@@ -8,10 +8,12 @@ import htmlImage from '../images/html.png';
 import jsImage from '../images/js.png';
 import tsImage from '../images/ts.png';
 import phpImage from '../images/php.svg';
+import csImage from '../images/cs.svg';
 // Frameworks & Libraries
 import reactImage from '../images/react.png';
 import graphqlImage from '../images/graphql.png';
 import tailwindImage from '../images/tailwind.svg';
+import netImage from '../images/NETCore.svg';
 import chakraImage from '../images/chakra.png';
 import springbootImage from '../images/springboot.svg';
 import nodejsImage from '../images/nodejs.svg';
@@ -50,6 +52,10 @@ function Skills() {
             <div className="skill-item">
               <img src={javaImage} alt="Java" className="skill-icon" />
               <span className="skill-text">Java</span>
+            </div>
+            <div className="skill-item">
+              <img src={csImage} alt="Csharp" className="skill-icon" />
+              <span className="skill-text">C#</span>
             </div>
             <div className="skill-item">
               <img src={cppImage} alt="C++" className="skill-icon" />
@@ -93,6 +99,10 @@ function Skills() {
             <div className="skill-item">
               <img src={springbootImage} alt="Spring Boot" className="skill-icon" />
               <span className="skill-text">Spring Boot</span>
+            </div>
+            <div className="skill-item">
+              <img src={netImage} alt=".NET" className="skill-icon" />
+              <span className="skill-text">.NET Core</span>
             </div>
             <div className="skill-item">
               <img src={chakraImage} alt="Chakra UI" className="skill-icon" />
