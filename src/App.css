@@ -105,22 +105,6 @@ section {
   color: #ff3b3b;
 }
 
-/* Image styling */
-.about-me-img {
-  flex-shrink: 0;
-  max-width: 280px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px #a83232; 
-  border: 2px solid #a83232;  
-  object-fit: cover;
-  display: block;
-}
-
-/* Hide mobile image by default */
-.mobile-only {
-  display: none;
-}
-
 /* === Contact === */
 .contact-section {
   text-align: center;

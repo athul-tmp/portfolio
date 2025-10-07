@@ -1,18 +1,13 @@
 import React from 'react';
-import myImage from '../images/personal_image.jpg';
 
 function AboutMe() {
   return (
     <section className="about-me" id="aboutme">
       <div className="about-me-text">
-        <h1>Who am I?</h1>
-        {/* Mobile image */}
-        <img src={myImage} alt="This is me" className="about-me-img mobile-only" />
-        <p>My name is <b>Athul</b>. I'm a recent Computer Science graduate from RMIT University, passionate about computers and technology. Beyond coding, I enjoy exploring new tech, gaming, NBA, F1, and all things nerdy.</p>
+        <h1>About Me</h1>
+        <p>I'm <b>Athul</b>, a Computer Science graduate from RMIT University who loves creating software that's both functional and thoughtful. I'm always experimenting with new tools, improving my projects, and diving into things that make me a better developer.</p>
         <p>Check out some of my projects!</p>
       </div>
-      {/* Desktop image */}
-      <img src={myImage} alt="This is me" className="about-me-img desktop-only" />
     </section>
   );
 }
