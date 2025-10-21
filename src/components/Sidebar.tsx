@@ -1,12 +1,14 @@
+"use client";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import { Mail, Github, Linkedin } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
+import { useActiveSection } from '@/context/ActiveSectionContext';
 
 const NAV_LINKS = [
-  { href: "/#about", label: "ABOUT" },
-  { href: "/#skills", label: "SKILLS" },
-  { href: "/#projects", label: "PROJECTS" },
+  { href: "/#about", label: "ABOUT", id: 'about' as const },
+  { href: "/#skills", label: "SKILLS", id: 'skills' as const },
+  { href: "/#projects", label: "PROJECTS", id: 'projects' as const },
 ];
 
 const SOCIAL_LINKS = [
@@ -16,8 +18,14 @@ const SOCIAL_LINKS = [
 ];
 
 export function Sidebar() {
+  const { activeSection, setActiveSection } = useActiveSection();
+
   const name = "Athul Thampan";
   const headline = "Computer Science Graduate";
+
+  const handleLinkClick = (id: 'about' | 'skills' | 'projects') => {
+    setActiveSection(id);
+  };
 
   return (
     <div className="lg:sticky lg:top-0 lg:h-screen lg:w-full lg:max-w-md lg:p-16 flex flex-col justify-between py-12 px-6">
@@ -37,17 +45,28 @@ export function Sidebar() {
         {/* Desktop Navigation */}
         <nav className="hidden lg:block mt-16">
           <ul className="space-y-4">
-            {NAV_LINKS.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="group flex items-center py-2 text-xs font-bold uppercase tracking-widest text-muted-foreground transition-colors hover:text-primary"
-                >
-                  {item.label}
-                </Link>
-                <Separator className="w-16 transition-all group-hover:w-full" />
-              </li>
-            ))}
+            {NAV_LINKS.map((item) => {
+              const isActive = activeSection === item.id;
+
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    onClick={() => handleLinkClick(item.id)}
+                    className={`group flex items-center py-2 text-xs font-bold uppercase tracking-widest transition-colors 
+                      ${isActive 
+                        ? 'text-primary' 
+                        : 'text-muted-foreground hover:text-foreground'
+                      }`}
+                  >
+                    {item.label}
+                  </Link>
+                  <Separator 
+                    className={`transition-all duration-300 ${isActive ? 'w-full bg-primary' : 'w-16'}`} 
+                  />
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </div>
