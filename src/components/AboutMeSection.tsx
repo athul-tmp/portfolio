@@ -2,8 +2,8 @@ import { Separator } from "@/components/ui/separator";
 
 export function AboutMeSection() {
   return (
-    <section id="about" className="py-16">
-      <h2 className="text-3xl font-bold mb-8">About Me</h2>
+    <section id="about" >
+      <h2 className="text-3xl font-bold mb-8">About</h2>
       
       <div className="space-y-4 text-muted-foreground">
         <p>

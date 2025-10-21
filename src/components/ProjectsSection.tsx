@@ -1,12 +1,18 @@
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import Image from "next/image"; 
 import Link from "next/link";
-import { Github, PlayCircle, FileText } from "lucide-react"; 
+import Image from "next/image"; 
+import { Github, PlayCircle, FileText, ArrowUpRight, Globe } from "lucide-react"; 
 
 const projectsData = [
+  // {
+  //   title: "JobLog",
+  //   image: "",
+  //   description: "",
+  //   tech: [],
+  //   live: "",
+  //   repo: ""
+  // },
   {
     title: "TeachTeam - Teaching Team Management App",
     image: "/images/teachteam.png", 
@@ -77,10 +83,11 @@ const projectsData = [
   },
 ];
 
+
 export function ProjectsSection() {
   return (
-    <section id="projects" className="py-16">
-      <h2 className="text-3xl font-bold mb-8">My Projects</h2>
+    <section id="projects">
+      <h2 className="text-3xl font-bold mb-8">Projects</h2>
       
       <p className="mb-4 text-muted-foreground">
         The code repository for this portfolio website can be accessed <Link href="https://github.com/athul-tmp/portfolio" target="_blank" rel="noreferrer" className="text-primary hover:underline font-medium">here</Link>.
@@ -89,67 +96,110 @@ export function ProjectsSection() {
         The following are some of the projects that I've been involved in over the years:
       </p>
 
-      {/* Grid Layout for Project Cards */}
-      <div className="grid gap-12">
+      {/* Projects */}
+      <div className="grid gap-4">
         {projectsData.map((project, idx) => (
-          <Card key={idx} className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
-            <div className="relative h-64 w-full">
-                <Image
-                    src={project.image}
-                    alt={`${project.title} screenshot`}
-                    fill
-                    style={{objectFit : "cover"}}
-                    className="transition-transform duration-500 hover:scale-[1.02]"
-                />
+          <div 
+            key={idx} 
+            className="group grid grid-cols-1 gap-y-4 p-4 rounded-lg 
+                       transition-all duration-300 hover:bg-muted/30 focus-within:bg-muted/30 focus-within:shadow-lg"
+          >
+            
+            {/* Title */}
+            <h3 className="text-xl font-bold transition-colors duration-300">
+              {project.title}
+            </h3>
+
+            <div className="grid grid-cols-12 gap-x-4">
+                
+                {/* Image */}
+                <div className="col-span-3 h-20 w-full relative overflow-hidden rounded-md border 
+                                hidden sm:block">
+                    <Image
+                        src={project.image}
+                        alt={`${project.title} screenshot`}
+                        fill
+                        style={{objectFit : "cover"}}
+                        className="transition-transform duration-500 group-hover:scale-[1.05]"
+                    />
+                </div>
+                
+                {/* Description */}
+                <p className="col-span-12 sm:col-span-9 text-sm text-muted-foreground">
+                    {project.description}
+                </p>
             </div>
-            
-            <CardHeader>
-              <CardTitle>{project.title}</CardTitle>
-            </CardHeader>
-            
-            <CardContent>
-              <CardDescription className="text-base text-muted-foreground mb-4">
-                {project.description}
-              </CardDescription>
-              
-              {/* Tech Badges */}
-              <div className="flex flex-wrap gap-2">
+
+
+            {/* Links */}
+            <div className="flex flex-wrap items-center gap-2 mt-2">
+                {project.repo && (
+                  <Link 
+                    href={project.repo} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="flex items-center text-sm font-semibold text-primary p-2 rounded-md transition-all hover:bg-primary/10 underline"
+                    aria-label={`View ${project.title} GitHub repository`}
+                  >
+                    <Github className="mr-1 h-4 w-4" />
+                    Code
+                    <ArrowUpRight className="ml-1 h-3 w-3" />
+                  </Link>
+                )}
+                {project.demo && (
+                  <Link 
+                    href={project.demo} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="flex items-center text-sm font-semibold text-primary p-2 rounded-md transition-all hover:bg-primary/10 underline"
+                    aria-label={`View ${project.title} Demo`}
+                  >
+                    <PlayCircle className="mr-1 h-4 w-4" />
+                    Demo
+                    <ArrowUpRight className="ml-1 h-3 w-3" />
+                  </Link>
+                )}
+                {project.report && (
+                  <Link 
+                    href={project.report} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="flex items-center text-sm font-semibold text-primary p-2 rounded-md transition-all hover:bg-primary/10 underline"
+                    aria-label={`View ${project.title} Report`}
+                  >
+                    <FileText className="mr-1 h-4 w-4" />
+                    Report
+                    <ArrowUpRight className="ml-1 h-3 w-3" /> 
+                  </Link>
+                )}
+                {/* {project.live && (
+                <Link 
+                  href={project.live} 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  className="flex items-center text-sm font-semibold text-primary p-2 rounded-md transition-all hover:bg-primary/10 underline"
+                  aria-label={`View ${project.title} Live Site`}
+                >
+                  <Globe className="mr-1 h-4 w-4" />
+                  Live Site
+                  <ArrowUpRight className="ml-1 h-3 w-3" />
+                </Link>
+                )} */}
+            </div>
+
+            {/* Tools */}
+            <div className="flex flex-wrap gap-2 pt-2">
                 {project.tech.map((techItem, i) => (
-                  <Badge key={i} variant="outline" className="text-xs font-normal">
+                  <Badge 
+                    key={i} 
+                    className="text-xs font-medium text-primary bg-primary/10 border-transparent 
+                                hover:bg-primary/20 transition-colors duration-200"
+                  >
                     {techItem}
                   </Badge>
                 ))}
-              </div>
-            </CardContent>
-            
-            <CardFooter className="flex flex-wrap gap-3">
-              {/* Project Links (Repo, Demo, Report) */}
-              {project.repo && (
-                <Button asChild variant="outline">
-                  <Link href={project.repo} target="_blank" rel="noreferrer">
-                    <Github className="mr-2 h-4 w-4" />
-                    Code
-                  </Link>
-                </Button>
-              )}
-              {project.demo && (
-                <Button asChild variant="default">
-                  <Link href={project.demo} target="_blank" rel="noreferrer">
-                    <PlayCircle className="mr-2 h-4 w-4" />
-                    Demo
-                  </Link>
-                </Button>
-              )}
-              {project.report && (
-                <Button asChild variant="secondary">
-                  <Link href={project.report} target="_blank" rel="noreferrer">
-                    <FileText className="mr-2 h-4 w-4" />
-                    Report
-                  </Link>
-                </Button>
-              )}
-            </CardFooter>
-          </Card>
+            </div>
+          </div>
         ))}
       </div>
 

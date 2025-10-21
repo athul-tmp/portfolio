@@ -1,16 +1,18 @@
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
-import { Home, User, Lightbulb, Mail, Github, Linkedin } from "lucide-react"; 
+import { Mail, Github, Linkedin } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const NAV_LINKS = [
-  { href: "/#about", label: "ABOUT", icon: User },
-  { href: "/#skills", label: "SKILLS", icon: Lightbulb },
-  { href: "/#projects", label: "PROJECTS", icon: Home },
+  { href: "/#about", label: "ABOUT" },
+  { href: "/#skills", label: "SKILLS" },
+  { href: "/#projects", label: "PROJECTS" },
 ];
 
 const SOCIAL_LINKS = [
   { href: "https://github.com/athul-tmp", icon: Github, label: "GitHub" }, 
-  { href: "#", icon: Linkedin, label: "LinkedIn" },
+  { href: "https://www.linkedin.com/in/athul-thampan/", icon: Linkedin, label: "LinkedIn" },
+  { href: "mailto:athul.tmp@gmail.com", icon: Mail, label: "Mail" }
 ];
 
 export function Sidebar() {
@@ -39,9 +41,8 @@ export function Sidebar() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="group flex items-center py-2 text-xs font-bold uppercase tracking-widest text-muted-foreground transition-colors hover:text-foreground"
+                  className="group flex items-center py-2 text-xs font-bold uppercase tracking-widest text-muted-foreground transition-colors hover:text-primary"
                 >
-                  <item.icon className="mr-3 h-4 w-4 opacity-0 transition-opacity group-hover:opacity-100" />
                   {item.label}
                 </Link>
                 <Separator className="w-16 transition-all group-hover:w-full" />
@@ -51,20 +52,28 @@ export function Sidebar() {
         </nav>
       </div>
 
-      {/* Bottom Section: Social Links */}
-      <div className="flex space-x-6 mt-12">
-        {SOCIAL_LINKS.map((item) => (
-          <a
-            key={item.label}
-            href={item.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={item.label}
-            className="text-muted-foreground transition-colors hover:text-primary"
-          >
-            <item.icon className="h-6 w-6" />
-          </a>
-        ))}
+      <div className="flex items-center justify-between mt-12">
+        
+        {/* Social Links Group (Left side) */}
+        <div className="flex space-x-6">
+          {SOCIAL_LINKS.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={item.label}
+              className="text-muted-foreground transition-colors hover:text-primary"
+            >
+              <item.icon className="h-6 w-6" />
+            </a>
+          ))}
+        </div>
+        
+        {/* Theme Toggle (Right side) */}
+        <div>
+          <ThemeToggle />
+        </div>
       </div>
     </div>
   );
