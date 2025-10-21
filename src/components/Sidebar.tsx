@@ -39,7 +39,7 @@ export function Sidebar() {
           {headline}
         </p>
         <p className="mt-8 text-lg text-muted-foreground hidden lg:block">
-          I'm a Computer Science graduate from RMIT University who loves creating software that's both functional and thoughtful.
+          An eager Computer Science graduate focused on turning real-world problems into streamlined, scalable software solutions.
         </p>
 
         {/* Desktop Navigation */}
