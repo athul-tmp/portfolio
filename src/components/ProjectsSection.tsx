@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import Image from "next/image"; 
-import { Github, PlayCircle, FileText, ArrowUpRight } from "lucide-react"; 
+import { Github, PlayCircle, FileText, ArrowUpRight, Globe } from "lucide-react"; 
 
 const projectsData = [
   // {
@@ -71,7 +71,7 @@ const projectsData = [
     description: "Built an interactive rock-paper-scissors game with HTML, CSS, and JavaScript, where users play against a computer opponent.",
     tech: ["JavaScript", "HTML", "CSS"],
     repo: "https://github.com/athul-tmp/rock-paper-scissors",
-    demo: "https://athul-tmp.github.io/rock-paper-scissors/",
+    live: "https://athul-tmp.github.io/rock-paper-scissors/",
   },
   {
     title: "Facebook Metrics Analysis",
@@ -172,7 +172,7 @@ export function ProjectsSection() {
                     <ArrowUpRight className="ml-1 h-3 w-3" /> 
                   </Link>
                 )}
-                {/* {project.live && (
+                {project.live && (
                 <Link 
                   href={project.live} 
                   target="_blank" 
@@ -184,7 +184,7 @@ export function ProjectsSection() {
                   Live Site
                   <ArrowUpRight className="ml-1 h-3 w-3" />
                 </Link>
-                )} */}
+                )}
             </div>
 
             {/* Tools */}

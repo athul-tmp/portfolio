@@ -5,6 +5,7 @@ import { Sidebar } from "@/components/Sidebar";
 import { ThemeProvider } from 'next-themes'; 
 import { ActiveSectionProvider } from '@/context/ActiveSectionContext';
 import { MobileHeader } from '@/components/MobileHeader';
+import Head from 'next/head';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,6 +13,10 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem> 
       <ActiveSectionProvider> 
+        <Head>
+          <title>Athul Thampan</title>
+        </Head>
+
         <div className={inter.className}>
           
           <MobileHeader />
