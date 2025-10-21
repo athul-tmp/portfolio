@@ -2,8 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { useActiveSection } from '@/context/ActiveSectionContext';
-import { Menu } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { ThemeToggle } from './ThemeToggle';
 
 // Maps the section ID to a displayable title

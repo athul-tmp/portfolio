@@ -32,7 +32,7 @@ export default function App({ Component, pageProps }: AppProps) {
               </div>
               
               <footer className="mt-24 text-center text-sm text-muted-foreground mb-20 lg:mb-0">
-                <p>Built with Next.js, React, Tailwind CSS, and shadcn/ui. Hosted on Netlify.</p>
+                <p>Built with Next.js, React, Tailwind CSS, and shadcn/ui. Deployed on Netlify.</p>
                 <p>Copyright © {new Date().getFullYear()} Athul. All rights reserved.</p>
               </footer>
             </main>

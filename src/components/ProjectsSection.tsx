@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import Image from "next/image"; 
-import { Github, PlayCircle, FileText, ArrowUpRight, Globe } from "lucide-react"; 
+import { Github, PlayCircle, FileText, ArrowUpRight } from "lucide-react"; 
 
 const projectsData = [
   // {
@@ -93,7 +93,7 @@ export function ProjectsSection() {
         The code repository for this portfolio website can be accessed <Link href="https://github.com/athul-tmp/portfolio" target="_blank" rel="noreferrer" className="text-primary hover:underline font-medium">here</Link>.
       </p>
       <p className="mb-8 text-muted-foreground">
-        The following are some of the projects that I've been involved in over the years:
+        The following are some of the projects that I&apos;ve been involved in over the years:
       </p>
 
       {/* Projects */}
