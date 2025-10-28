@@ -7,12 +7,16 @@ export function AboutMeSection() {
       
       <div className="space-y-4 text-muted-foreground">
         <p>
-          I&apos;m <span className="text-foreground">Athul</span>, a motivated Computer Science graduate from RMIT University who loves creating software that&apos;s both functional and thoughtful. As a fresh graduate, I&apos;m open to exploring roles across the <span className="text-foreground">Software Development, Data, and Cloud</span> domains, eager and excited to learn and advance my career.
+          I&apos;m <span className="text-foreground">Athul</span>, a motivated Computer Science graduate from RMIT University who loves creating software that&apos;s both functional and thoughtful. As a fresh graduate, I&apos;m open to exploring roles across the <span className="text-foreground">Software Development, Data, Cloud and DevOps</span> domains, eager and excited to learn and advance my career.
         </p>
         <p>
           My foundation is built on hands-on experience, including an internship as a <span className="text-foreground">Software Development Intern at Woofya</span>. There, I contributed to a gamified PWA by implementing core features like onboarding and profile setup, integrating Firebase Auth and Directus APIs into a <span className="text-foreground">PHP codebase</span>. I&apos;m also particularly proud of <span className="text-foreground">TeachTeam</span>, a full-stack platform I built using <span className="text-foreground">React and Node.js</span> for managing university teaching teams, complete with secure, role-based dashboards and admin reporting.</p>
         <p>
-          I enjoy creating <span className="text-foreground">practical solutions for real-world problems</span>. Currently I am creating JobLog, a job tracking platform I&apos;m building because relying on spreadsheets requires excessive manual setup and lacks the integrated, analytical clarity needed for a modern job search. JobLog is designed to be a powerful tracker that provides clarity on my application progress and outcomes. Built with <span className="text-foreground">C#, ASP.NET, PostgreSQL, and React/Next.js</span>, it leverages Chart.js for an <span className="text-foreground">advanced dashboard that visualises application status and trends which are crucial insights that are automatic in a streamlined software tool</span>. The project is <span className="text-foreground">currently being prepared for deployment</span> using Vercel and Oracle Cloud Infrastructure, and <span className="text-foreground">I&apos;m truly looking forward to sharing the finished product</span>.
+          Most recently, I completed <span className="text-foreground">JobLog</span>, a full-stack job application tracker and analytics dashboard built with <span className="text-foreground">C#, ASP.NET, PostgreSQL, and React/Next.js</span>. It helps users manage and analyse their job search journey with features like filtering, sorting, and trend visualisations powered by <span className="text-foreground">Chart.js</span>. Deployed via <span className="text-foreground">Vercel</span> and <span className="text-foreground">Google Cloud Run</span>, JobLog focuses on clarity, automation, and user experience. I&apos;m now expanding it further with a <span className="text-foreground">browser extension</span> that automatically captures job listings and syncs them directly into the tracker.
+        </p>
+
+        <p>
+          I enjoy designing <span className="text-foreground">practical, user-centric tools</span> that streamline everyday challenges by transforming ideas into robust, scalable, and visually refined software products.
         </p>
       </div>
 
