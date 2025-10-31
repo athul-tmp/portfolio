@@ -7,7 +7,7 @@ export function AboutMeSection() {
       
       <div className="space-y-4 text-muted-foreground">
         <p>
-          I&apos;m <span className="text-foreground">Athul</span>, a motivated Computer Science graduate from RMIT University who loves creating software that&apos;s both functional and thoughtful. As a fresh graduate, I&apos;m open to exploring roles across the <span className="text-foreground">Software Development, Data, Cloud and DevOps</span> domains, eager and excited to learn and advance my career.
+          I&apos;m <span className="text-foreground">Athul</span>, a Software Engineer and recent Computer Science graduate from RMIT University who enjoys building software that&apos;s both functional and thoughtfully designed. I&apos;m early in my career and actively pursuing opportunities across <span className="text-foreground">Software Engineering, Data, and Cloud,</span> while continuing to build real-world projects and strengthen my technical foundations.
         </p>
         <p>
           My foundation is built on hands-on experience, including an internship as a <span className="text-foreground">Software Development Intern at Woofya</span>. There, I contributed to a gamified PWA by implementing core features like onboarding and profile setup, integrating Firebase Auth and Directus APIs into a <span className="text-foreground">PHP codebase</span>. I&apos;m also particularly proud of <span className="text-foreground">TeachTeam</span>, a full-stack platform I built using <span className="text-foreground">React and Node.js</span> for managing university teaching teams, complete with secure, role-based dashboards and admin reporting.</p>

@@ -21,7 +21,7 @@ export function Sidebar() {
   const { activeSection, setActiveSection } = useActiveSection();
 
   const name = "Athul Thampan";
-  const headline = "Computer Science Graduate";
+  const headline = "Software Engineer";
 
   const handleLinkClick = (id: 'about' | 'skills' | 'projects') => {
     setActiveSection(id);
@@ -39,7 +39,7 @@ export function Sidebar() {
           {headline}
         </p>
         <p className="mt-8 text-lg text-muted-foreground hidden lg:block">
-          An eager Computer Science graduate focused on turning real-world problems into streamlined, scalable software solutions.
+          I build modern applications and enjoy learning by building things that solve real problems.
         </p>
 
         {/* Desktop Navigation */}
