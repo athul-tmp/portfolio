@@ -6,7 +6,8 @@ import Head from "next/head";
 export default function HomePage() {
   return (
     <>
-    {/* <Head>
+    <Head>
+      <title>Athul Thampan</title>
       <meta property="og:title" content="Athul Thampan Portfolio" />
       <meta property="og:description" content="Portfolio showcasing Athul Thampan's software projects." />
       <meta property="og:url" content="https://athulthampan.com/" />
@@ -20,7 +21,7 @@ export default function HomePage() {
       <meta name="twitter:title" content="Athul Thampan Portfolio" />
       <meta name="twitter:description" content="Portfolio showcasing Athul Thampan's software projects." />
       <meta name="twitter:image" content="https://athulthampan.com/images/portfolio.png" />
-    </Head> */}
+    </Head>
     
     <div className="space-y-24">
       <AboutMeSection />     
