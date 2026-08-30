@@ -16,6 +16,10 @@ export function AboutMeSection() {
         </p>
 
         <p>
+          I&apos;m currently working as a <span className="text-foreground">Volunteer Software Engineer at Marra Community Hub</span>, contributing to a production volunteer management platform. I implement server-side logic in <span className="text-foreground">C#/.NET (ASP.NET Core)</span> and frontend features in <span className="text-foreground">React</span>, and write unit and integration tests with <span className="text-foreground">xUnit</span> against a Dockerised PostgreSQL instance within an established CI/CD pipeline. I collaborate through a <span className="text-foreground">PR-based Git workflow</span>, with all work reviewed and revised based on feedback, and use AI-assisted development tools like <span className="text-foreground">Claude Code</span> as part of the team&apos;s standard workflow.
+        </p>
+
+        <p>
           I enjoy designing <span className="text-foreground">practical, user-centric tools</span> that streamline everyday challenges by transforming ideas into robust, scalable, and visually refined software products.
         </p>
       </div>
