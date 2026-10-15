@@ -6,62 +6,75 @@ import Image from "next/image";
 import { useTheme } from "next-themes"; 
 import { Spinner } from "./ui/spinner";
 
-const SKILLS_DATA = [
+type Skill = {
+  name: string;
+  image: string;
+  light_image?: string;
+};
+
+const SKILLS_DATA: { category: string; skills: Skill[] }[] = [
   {
-    category: "Languages",
+    category: "Languages & Frameworks",
     skills: [
-      { name: "Python", image: "/images/python.png" }, 
-      { name: "Java", image: "/images/java.png" },
       { name: "C#", image: "/images/cs.svg" },
-      { name: "C++", image: "/images/cplusplus.png" },
-      { name: "HTML", image: "/images/html.png" },
-      { name: "CSS", image: "/images/css.png" },
+      { name: "ASP.NET Core", image: "/images/NETCore.svg" },
       { name: "JavaScript", image: "/images/js.png" },
       { name: "TypeScript", image: "/images/ts.png" },
-      { name: "PHP", image: "/images/php.svg" },
-    ],
-  },
-  {
-    category: "Frameworks & Libraries",
-    skills: [
       { name: "React", image: "/images/react.png" },
       { name: "Node.js", image: "/images/nodejs.svg" },
+      { name: "Express.js", image: "/images/express_white.svg", light_image: "/images/express.svg" },
+      { name: "Java", image: "/images/java.png" },
       { name: "Spring Boot", image: "/images/springboot.svg" },
-      { name: ".NET Core", image: "/images/NETCore.svg" },
-      { name: "Chakra UI", image: "/images/chakra.png" },
-      { name: "Shadcn UI", image: "/images/ui_dark.svg", light_image: "/images/ui_light.svg" }, 
+      { name: "HTML", image: "/images/html.png" },
+      { name: "CSS", image: "/images/css.png" },
       { name: "Tailwind CSS", image: "/images/tailwind.svg" },
-      { name: "GraphQL", image: "/images/graphql.png" },
+      { name: "Python", image: "/images/python.png" },
+      { name: "PHP", image: "/images/php.svg" },
     ],
   },
   {
     category: "Databases",
     skills: [
+      { name: "PostgreSQL", image: "/images/postgresql.png" },
       { name: "MySQL", image: "/images/mysql.svg" },
       { name: "SQLite", image: "/images/sqlite.png" },
-      { name: "MS SQL Server", image: "/images/mssql.png" },
-      { name: "PostgreSQL", image: "/images/postgresql.png"},
       { name: "MongoDB", image: "/images/mongodb.svg" },
-      { name: "DynamoDB", image: "/images/DynamoDB.png" },
+    ],
+  },
+  {
+    category: "Cloud & DevOps",
+    skills: [
+      { name: "AWS (EC2, S3)", image: "/images/aws.png", light_image: "/images/aws_dark.svg" },
+      { name: "Azure (Container Apps)", image: "/images/azure.svg" },
+      { name: "Google Cloud (Cloud Run)", image: "/images/googlecloud.svg" },
+      { name: "GitHub Actions", image: "/images/githubactions.svg" },
+      { name: "Docker", image: "/images/docker.png" },
+      { name: "Vercel", image: "/images/vercel_white.svg", light_image: "/images/vercel.svg" },
+      { name: "Netlify", image: "/images/netlify.svg" },
+    ],
+  },
+  {
+    category: "Libraries & Testing",
+    skills: [
+      { name: "Axios", image: "/images/axios.svg" },
+      { name: "Chakra UI", image: "/images/chakra.png" },
+      { name: "shadcn/ui", image: "/images/ui_dark.svg", light_image: "/images/ui_light.svg" },
+      { name: "Chart.js", image: "/images/chartjs.svg" },
+      { name: "Jest", image: "/images/jest.svg" },
+      { name: "JUnit", image: "/images/junit.svg" },
+      { name: "xUnit", image: "/images/xunit_white.svg", light_image: "/images/xunit.svg" },
+      { name: "Moq", image: "/images/moq.png" },
     ],
   },
   {
     category: "Developer Tools",
     skills: [
       { name: "Git", image: "/images/git.png" },
-      { name: "AWS", image: "/images/aws.png", light_image: "/images/aws_dark.svg" }, 
-      { name: "Firebase", image: "/images/firebase.svg" },
-      { name: "Docker", image: "/images/docker.png" },
-      { name: "VS Code", image: "/images/vscode.png" },
+      { name: "Postman", image: "/images/postman.svg" },
       { name: "Figma", image: "/images/figma.png" },
-    ],
-  },
-  {
-    category: "Operating Systems",
-    skills: [
-      { name: "macOS", image: "/images/macos.png", light_image: "/images/apple_dark.png"}, 
-      { name: "Linux", image: "/images/linux.png" },
-      { name: "Windows", image: "/images/windows.png" },
+      { name: "DBeaver", image: "/images/dbeaver.svg" },
+      { name: "VS Code", image: "/images/vscode.png" },
+      { name: "Claude Code", image: "/images/claude.svg" },
     ],
   },
 ];
